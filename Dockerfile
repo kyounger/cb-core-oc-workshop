@@ -1,9 +1,10 @@
 FROM cloudbees/cloudbees-cloud-core-oc:2.222.1.1-alpine
 
 LABEL maintainer "kmadel@cloudbees.com"
+LABEL maintainer "kyounger@cloudbees.com"
 
 #skip setup wizard and disable CLI
-ENV JVM_OPTS -Djenkins.CLI.disabled=true -server
+ENV JVM_OPTS -server
 ENV TZ="/usr/share/zoneinfo/America/New_York"
 
 #install suggested and additional plugins

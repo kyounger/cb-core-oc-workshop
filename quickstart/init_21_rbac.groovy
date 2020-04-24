@@ -65,8 +65,7 @@ String authorizationStrategyBefore = authorizationStrategy.getClass().getName()
 
 HudsonPrivateSecurityRealm hudsonPrivateSecurityRealm = new HudsonPrivateSecurityRealm(true, false, null)
 hudsonPrivateSecurityRealm.createAccount("admin", "changeit")
-hudsonPrivateSecurityRealm.createAccount("beedemo-ops", "changeit")
-hudsonPrivateSecurityRealm.createAccount("beedemo-dev", "changeit")
+hudsonPrivateSecurityRealm.createAccount("kenny", "changeit")
 jenkins.setSecurityRealm(hudsonPrivateSecurityRealm)
 
     String ROLE_ADMINISTER = "administer";
